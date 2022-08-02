@@ -1,0 +1,4 @@
+/* 최소 가로가 769px 부터 최대 가로가 1024px 일 경우 적용 */
+.container {
+    background-color: pink;
+}
