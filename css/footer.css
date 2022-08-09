@@ -1,0 +1,30 @@
+footer {
+    height: 220px;
+    background-color: var(--background-color);
+    margin-top: 80px;
+}
+
+footer h2 {
+    font-weight: 600;
+}
+
+footer ul {
+    padding: 0;
+    margin: 8px 0;
+    font-weight: 300;
+}
+
+footer ul li {
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    padding: 40px 0 0 50px;
+    line-height: 1.8;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+

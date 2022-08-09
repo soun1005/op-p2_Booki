@@ -1,0 +1,42 @@
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    text-decoration: none;
+}
+
+/* logo */
+/* desktop logo */
+#logo-des {
+    width: 95px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* mobile logo */
+#logo-mob {
+    display: none;
+}
+
+/* nav */
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+}
+
+nav a:hover {
+    border-top: 1px var(--accent-color) solid;
+    color: var(--accent-color);
+}
+

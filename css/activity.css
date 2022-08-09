@@ -1,0 +1,141 @@
+#activity-marseille {
+    margin-top: 50px;
+}
+
+.activity-wrap {
+    display: flex;
+    margin-top: 40px;
+    gap: 4%;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 400px;
+}
+
+.column {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    height: 400px;
+}
+
+.tile,
+.tile-tiny {
+    border-radius: 15px;
+    box-shadow: 6px 9px 39px -13px rgba(0,0,0,0.21);
+}
+
+.tile {
+    height: 100%;
+}
+
+.tile a {
+    height: 100%;
+}
+
+.column a {
+    display: flex;
+    flex-direction: column;
+}
+
+.tile .img-des {
+    width: 100%;
+    height: 348px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.tile .img-mob,
+.tile-tiny .img-mob {
+    display: none;
+}
+
+.description,
+.tile-tiny .description {
+    height: 52px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+
+/* 2nd column */
+.column:nth-child(2) {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10%;
+}
+
+/* 1st photo of 2nd column */
+.column:nth-child(2) > .tile-tiny:nth-child(1) {
+    height: 55%;
+}
+
+.column:nth-child(2) > .tile-tiny:nth-child(1) a {
+    height: 100%;
+}
+
+.column:nth-child(2) > .tile-tiny:nth-child(1) .img-des {
+    width: 100%;
+    height: calc(100% - 52px);
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 2st photo of 2nd column */
+.column:nth-child(2) > .tile-tiny:nth-child(2) {
+    height: 35%;
+}
+
+.column:nth-child(2) > .tile-tiny:nth-child(2) a {
+    height: 100%;
+}
+
+.column:nth-child(2) > .tile-tiny:nth-child(2) .img-des {
+    width: 100%;
+    height: calc(100% - 52px);
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+/* 4th column */
+.column:nth-child(4) {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10%;
+}
+
+/* 1st photo of 4nd column */
+.column:nth-child(4) > .tile-tiny:nth-child(1) {
+    height: 45%;
+}
+
+.column:nth-child(4) > .tile-tiny:nth-child(1) a {
+    height: 100%;
+}
+
+.column:nth-child(4) > .tile-tiny:nth-child(1) .img-des {
+    width: 100%;
+    height: calc(100% - 52px);
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 2st photo of 4nd column */
+.column:nth-child(4) > .tile-tiny:nth-child(2) {
+    height: 45%;
+}
+
+.column:nth-child(4) > .tile-tiny:nth-child(2) a {
+    height: 100%;
+}
+
+.column:nth-child(4) > .tile-tiny:nth-child(2) .img-des {
+    width: 100%;
+    height: calc(100% - 52px);
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}

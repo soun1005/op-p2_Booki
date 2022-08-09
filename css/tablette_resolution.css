@@ -1,0 +1,78 @@
+.column h3 {
+    font-size: 14px;
+}
+
+.card-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-greybg {
+    flex-direction: column;
+}
+
+.popul-card {
+    width: 80%;
+    gap: 3%;
+    margin: 1% auto;
+    background-color: white;
+    border: 5px white solid;
+    border-radius: 16px;
+    transition: 0.5s;
+    box-shadow: 6px 9px 39px -13px rgb(0 0 0 / 21%);
+}
+
+.card-wrap-popul {
+    width: 100%;
+}
+
+.title-popul {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.card-greybg__popul {
+    width: 100%;
+    order: 1;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+#activity-marseille {
+    padding: 0 3%;
+}
+
+#card-greybg__marseille {
+    width: 100%;
+    order: 2;
+    padding: 6%;
+}
+
+#card-greybg__marseille h2 {
+    text-indent: 10px;
+}
+
+.card-wrap__marseille {
+    width: 100%;
+}
+
+.marseille-card {
+    margin: 10% 0 0 0;
+    width: 100%;
+}
+
+.marseille-card card-body {
+    padding: 10px;
+}
+
+.marseille-card .rating-icons {
+    margin-top: 1%;
+}
+
+#card-greybg__marseille img {
+    width: 100%;
+    height: 119px;
+}
+
