@@ -1,3 +1,27 @@
+/* fonts */
+a {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px; 
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* body */
 .container {
     padding: 0;
 }
@@ -116,7 +140,7 @@ nav {
     height: 45px;
 }
 
-/* Cards */
+/* cards */
 .card-greybg {
     flex-direction: column;
 }
@@ -173,24 +197,20 @@ nav {
     flex-direction: column;
 }
 
-.marseille-card {
+.marseille__card {
     margin: 10% 0 0 0;
     width: 100%;
 }
 
-.marseille-card h4 {
+.marseille__card h4 {
     margin-top: 0;
 }
 
-.marseille-card card-body {
+.marseille__card .card-body {
     padding: 10px;
 }
 
-.marseille-card .card-excerpt {
-    margin-top: 1%;
-}
-
-.marseille-card .rating-icons {
+.marseille__card .rating-icons {
     margin-top: 1%;
 }
 
@@ -226,6 +246,11 @@ nav {
 .activity__tile,
 .activity__tile-tiny {
     margin-bottom: 10%;
+}
+
+.activity__column:nth-child(2),
+.activity__column:nth-child(4) {
+    gap: 0;
 }
 
 /* mobile imgs */
