@@ -62,7 +62,7 @@
         <nav>
           <ul>
             <li><a href="#card-greybg__marseille">Hébergements</a></li>
-            <li><a href="#activity-marseille">Activités</a></li>
+            <li><a href="#activity">Activités</a></li>
           </ul>
         </nav>
       </header>
@@ -70,18 +70,18 @@
       <!-- Main -->
       <main>
         <!-- Search -->
-        <section class="filter-section">
-          <div class="search-btn">
+        <section class="search">
+          <div class="search__container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h4>En plein centre ville ou en pleine nature</h4>
-            <form action="#" class="search-wrap">
+            <form action="#" class="search__wrap">
               <a href="#"><i class="fa-solid fa-location-dot"></i></a>
               <input
-                id="input-search"
+                id="input-text"
                 type="text"
                 placeholder="Marseille, France"
               />
-              <input id="input-search-btn" type="button" value="Rechercher" />
+              <input id="input-btn--search" type="button" value="Rechercher" />
               <!-- btn for mobile -->
               <button id="mobile-btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -90,14 +90,14 @@
           </div>
 
           <!-- Filter -->
-          <div class="filter-wrap">
+          <div class="filter__wrap">
             <h2>Filtres</h2>
-            <div class="filter-icons">
+            <div class="filter__icons">
               <!-- Filter1 -->
               <a href="#">
                 <div class="filter">
                   <i class="fa-solid fa-money-bill-wave"></i>
-                  <h2>Économique</h2>
+                  <h3>Économique</h3>
                 </div>
               </a>
 
@@ -105,7 +105,7 @@
               <a href="#">
                 <div class="filter">
                   <i class="fa-solid fa-child-reaching"></i>
-                  <h2>Familial</h2>
+                  <h3>Familial</h3>
                 </div>
               </a>
 
@@ -113,7 +113,7 @@
               <a href="#">
                 <div class="filter">
                   <i class="fa-solid fa-heart"></i>
-                  <h2>Romantique</h2>
+                  <h3>Romantique</h3>
                 </div>
               </a>
 
@@ -121,54 +121,55 @@
               <a href="#">
                 <div class="filter">
                   <i class="fa-solid fa-dog"></i>
-                  <h2>Animaux autorisés</h2>
+                  <h3>Animaux autorisés</h3>
                 </div>
               </a>
             </div>
           </div>
 
-          <div class="info-logo">
+          <div class="info__logo">
             <i class="fa-solid fa-info"></i>
             <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
           </div>
         </section>
 
         <!-- Card section -->
-        <section class="card-section">
+        <section class="card">
           <div class="card-greybg">
             <!-- Hébergements a Marseille -->
             <div id="card-greybg__marseille">
               <h2>Hébergements a Marseille</h2>
 
               <!-- Card wrap -->
-              <div class="card-wrap__marseille">
+              <div class="card__wrap__marseille">
                 <!-- Individuel cards -->
-                <a href="#" class="marseille-card">
-                  <img
-                    class="img-des"
-                    src="./images/hebergements/ver-desktop/auberge_la_cannebiere.jpg"
-                    alt="Auberge"
-                  />
-                  <img
-                    class="img-mob"
-                    src="./images/hebergements/ver-mobile/auberge_la.jpg"
-                    alt="Auberge-mob"
-                  />
-                  <div class="card-body">
-                    <h3>Auberge La cannebière</h3>
-                    <h4>Nuit a partir de 25€</h4>
-                    <div class="rating-icons">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star rating-grey"></i>
+                <figure class="marseille__card">
+                  <a href="#">
+                    <img
+                      class="img-des"
+                      src="./images/hebergements/ver-desktop/auberge_la_cannebiere.jpg"
+                      alt="Auberge"
+                    />
+                    <img
+                      class="img-mob"
+                      src="./images/hebergements/ver-mobile/auberge_la.jpg"
+                      alt="Auberge-mob"
+                    />
+                    <div class="card__body">
+                      <h3>Auberge La cannebière</h3>
+                      <h4>Nuit a partir de 25€</h4>
+                      <div class="rating-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star rating-grey"></i>
+                      </div>
                     </div>
-                  </div>
-                </a>
-
+                  </a>
+                </figure>
                 <!-- Card #2 Hotel du port -->
-                <div class="marseille-card">
+                <figure class="marseille__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -180,7 +181,7 @@
                       src="./images/hebergements/ver-mobile/hotel_du_port.jpg"
                       alt="hotel_du_port"
                     />
-                    <div class="card-body">
+                    <div class="card__body">
                       <h3>Hôtel Du Port</h3>
                       <h4>Nuit a partir de 52€</h4>
                       <div class="rating-icons">
@@ -192,10 +193,10 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
 
                 <!-- Card #3 Hotel Les mouettes -->
-                <div class="marseille-card">
+                <figure class="marseille__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -207,7 +208,7 @@
                       src="./images/hebergements/ver-mobile/hotel_les_mouettes.jpg"
                       alt="Hotel Les mouettes"
                     />
-                    <div class="card-body">
+                    <div class="card__body">
                       <h3>Hôtel Les mouettes</h3>
                       <h4>Nuit a partir de 76€</h4>
                       <div class="rating-icons">
@@ -219,9 +220,9 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
                 <!-- Card #4 Hotel de la mer -->
-                <div class="marseille-card">
+                <figure class="marseille__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -233,7 +234,7 @@
                       src="./images/hebergements/ver-mobile/hotel_de_la_mer.jpg"
                       alt="Hotel de la mer"
                     />
-                    <div class="card-body">
+                    <div class="card__body">
                       <h3>Hôtel de la mer</h3>
                       <h4>Nuit a partir de 76€</h4>
                       <div class="rating-icons">
@@ -245,9 +246,9 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
                 <!-- Card #5 Auberge Le Panier -->
-                <div class="marseille-card">
+                <figure class="marseille__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -259,7 +260,7 @@
                       src="./images/hebergements/ver-mobile/auberge_le_panier.jpg"
                       alt="Auberge Le Panier"
                     />
-                    <div class="card-body">
+                    <div class="card__body">
                       <h3>Auberge Le Panier</h3>
                       <h4>Nuit a partir de 23€</h4>
                       <div class="rating-icons">
@@ -271,9 +272,9 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
                 <!-- Card #6 Hotel chez Amina -->
-                <div class="marseille-card">
+                <figure class="marseille__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -285,7 +286,7 @@
                       src="./images/hebergements/ver-mobile/hotel_chez_amina.jpg"
                       alt="Hotel chez Amina"
                     />
-                    <div class="card-body">
+                    <div class="card__body">
                       <h3>Hôtel chez Amina</h3>
                       <h4>Nuit a partir de 23€</h4>
                       <div class="rating-icons">
@@ -297,9 +298,9 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
               </div>
-              <div class="afficher-link">
+              <div class="marseille__link">
                 <a href="#"><h3>Afficher plus</h3></a>
               </div>
             </div>
@@ -307,15 +308,15 @@
             <!-- Les plus populaires  -->
             <div class="card-greybg__popul">
               <!-- Title and icon -->
-              <div class="title-popul">
+              <div class="popul__title">
                 <h2>Les plus populaires</h2>
                 <i class="fa-solid fa-star"></i>
               </div>
 
               <!-- Card wrap -->
-              <div class="card-wrap-popul">
+              <div class="card__wrap__popul">
                 <!-- Individuel cards -->
-                <div class="popul-card">
+                <figure class="popul__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -327,8 +328,8 @@
                       src="./images/hebergements/ver-mobile/hotel_soleil_du_matin.jpg"
                       alt="Hotel Le soleil du matin"
                     />
-                    <div class="card-body">
-                      <div class="popul-card-excerpt">
+                    <div class="card__body">
+                      <div class="card__body__dscr">
                         <h3>Hôtel Le soleil du matin</h3>
                         <h4>Nuit a partir de 128€</h4>
                       </div>
@@ -341,8 +342,8 @@
                       </div>
                     </div>
                   </a>
-                </div>
-                <div class="popul-card">
+                </figure>
+                <figure class="popul__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -354,8 +355,8 @@
                       src="./images/hebergements/ver-mobile/au_coeur_de_leau.jpg"
                       alt="Au coeur de l'eau Chambres d'hotes"
                     />
-                    <div class="card-body">
-                      <div class="popul-card-excerpt">
+                    <div class="card__body">
+                      <div class="card__body__dscr">
                         <h3>Au coeur de l'eau Chambres d'hotes</h3>
                         <h4>Nuit a partir de 71€</h4>
                       </div>
@@ -368,9 +369,9 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
 
-                <div class="popul-card">
+                <figure class="popul__card">
                   <a href="#">
                     <img
                       class="img-des"
@@ -382,8 +383,8 @@
                       src="./images/hebergements/ver-mobile/hotel_tout_bleu.jpg"
                       alt="Hôtel Tout bleu et Blanc"
                     />
-                    <div class="card-body">
-                      <div class="popul-card-excerpt">
+                    <div class="card__body">
+                      <div class="card__body__dscr">
                         <h3>Hôtel Tout bleu et Blanc</h3>
                         <h4>Nuit a partir de 68€</h4>
                       </div>
@@ -396,20 +397,20 @@
                       </div>
                     </div>
                   </a>
-                </div>
+                </figure>
               </div>
             </div>
           </div>
 
           <!-- Activities in Marseille -->
-          <div id="activity-marseille">
+          <div id="activity">
             <h2>Activités à Marseille</h2>
 
             <!-- Cards by column -->
-            <div class="activity-wrap">
+            <div class="activity__wrap">
               <!--  column 1  -->
-              <div class="column">
-                <div class="tile">
+              <div class="activity__column">
+                <div class="activity__tile">
                   <a href="#">
                     <img
                       class="img-des"
@@ -421,7 +422,7 @@
                       src="./images/activites/ver-mobile/vieux_port.jpg"
                       alt="vieux port"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>Vieux Port</h3>
                     </div>
                   </a>
@@ -429,8 +430,8 @@
               </div>
 
               <!--  column 2  -->
-              <div class="column">
-                <div class="tile-tiny">
+              <div class="activity__column">
+                <div class="activity__tile-tiny">
                   <a href="#">
                     <img
                       class="img-des"
@@ -442,13 +443,13 @@
                       src="./images/activites/ver-mobile/fort_de_pomegues.jpg"
                       alt="Fort de Pomègues"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>Fort de Pomègues</h3>
                     </div>
                   </a>
                 </div>
                 <!-- 2nd tile on the bottom -->
-                <div class="tile-tiny">
+                <div class="activity__tile-tiny">
                   <a href="#">
                     <img
                       class="img-des"
@@ -460,7 +461,7 @@
                       src="./images/activites/ver-mobile/iles_du_frioul.jpg"
                       alt="îles du frioul"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>îles du frioul</h3>
                     </div>
                   </a>
@@ -468,8 +469,8 @@
               </div>
 
               <!-- 3rd column -->
-              <div class="column">
-                <div class="tile">
+              <div class="activity__column">
+                <div class="activity__tile">
                   <a href="#">
                     <img
                       class="img-des"
@@ -481,7 +482,7 @@
                       src="./images/activites/ver-mobile/parc_national.jpg"
                       alt="Parc National des Clanques"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>Parc National des Clanques</h3>
                     </div>
                   </a>
@@ -489,8 +490,8 @@
               </div>
 
               <!-- 4th column -->
-              <div class="column">
-                <div class="tile-tiny">
+              <div class="activity__column">
+                <div class="activity__tile-tiny">
                   <a href="#">
                     <img
                       class="img-des"
@@ -502,12 +503,12 @@
                       src="./images/activites/ver-mobile/notre_dame_de_la_garde.jpg"
                       alt="Notre-Dame-de-la-Garde"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                   </a>
                 </div>
-                <div class="tile-tiny">
+                <div class="activity__tile-tiny">
                   <a href="#">
                     <img
                       class="img-des"
@@ -519,7 +520,7 @@
                       src="./images/activites/ver-mobile/parc_longchamp.jpg"
                       alt="Parc Longchamp"
                     />
-                    <div class="description">
+                    <div class="activity__dscr">
                       <h3>Parc Longchamp</h3>
                     </div>
                   </a>
@@ -532,9 +533,9 @@
     </div>
 
     <footer>
-      <div class="footer-container">
+      <div class="footer__container container">
         <!-- first element -->
-        <div class="footer-section">
+        <div class="footer__section">
           <h2>A propos</h2>
           <ul>
             <li><a href="#">Fonctionnement du site</a></li>
@@ -543,7 +544,7 @@
           </ul>
         </div>
         <!-- 2nd element -->
-        <div class="footer-section">
+        <div class="footer__section">
           <h2>Nos hébergement</h2>
           <ul>
             <li><a href="#">Charte qualité</a></li>
@@ -551,7 +552,7 @@
           </ul>
         </div>
         <!-- 3rd element -->
-        <div class="footer-section">
+        <div class="footer__section">
           <h2>Assistance</h2>
           <ul>
             <li><a href="#">Centre d'aide</a></li>

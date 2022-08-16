@@ -1,8 +1,8 @@
-#activity-marseille {
+#activity {
     margin-top: 50px;
 }
 
-.activity-wrap {
+.activity__wrap {
     display: flex;
     margin-top: 40px;
     gap: 4%;
@@ -11,46 +11,51 @@
     height: 400px;
 }
 
-.column {
+/* Each columns */
+.activity__column {
     display: flex;
     flex-basis: 25%;
-    flex-direction: column;
     height: 400px;
+    /* for 2nd and 4th tiles */
+    flex-direction: column;
+    
 }
 
-.tile,
-.tile-tiny {
+/* Global for tiles and tiny tiles */
+.activity__tile,
+.activity__tile-tiny {
     border-radius: 15px;
     box-shadow: 6px 9px 39px -13px rgba(0,0,0,0.21);
 }
 
-.tile {
+/* 1st, 3rd tiles */
+.activity__tile {
     height: 100%;
 }
 
-.tile a {
-    height: 100%;
-}
-
-.column a {
+/* To align img and description vertically */
+.activity__column a {
     display: flex;
     flex-direction: column;
 }
 
-.tile .img-des {
+/* Desktop img */
+.activity__tile .img-des {
     width: 100%;
     height: 348px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.tile .img-mob,
-.tile-tiny .img-mob {
+/* Mobile img */
+.activity__tile .img-mob,
+.activity__tile-tiny .img-mob {
     display: none;
 }
 
-.description,
-.tile-tiny .description {
+/* Description on each cards */
+.activity__dscr,
+.activity__tile-tiny .activity__dscr {
     height: 52px;
     border-radius: 0 0 15px 15px;
     display: flex;
@@ -59,83 +64,77 @@
 }
 
 /* 2nd column */
-.column:nth-child(2) {
-    height: 400px;
+.activity__column:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 10%;
 }
 
-/* 1st photo of 2nd column */
-.column:nth-child(2) .tile-tiny:nth-child(1) {
+/* 
+    1st photo of 2nd column
+    = different height(each 55%, 35%, 10% of gap) */
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(1) {
     height: 55%;
 }
 
-.column:nth-child(2) .tile-tiny:nth-child(1) a {
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(1) a {
     height: 100%;
 }
 
-.column:nth-child(2) .tile-tiny:nth-child(1) .img-des {
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(1) .img-des {
     width: 100%;
+    /* 52px : size of description */
     height: calc(100% - 52px);
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
+
+
+
 /* 2st photo of 2nd column */
-.column:nth-child(2) .tile-tiny:nth-child(2) {
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(2) {
     height: 35%;
 }
 
-.column:nth-child(2) .tile-tiny:nth-child(2) a {
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(2) a {
     height: 100%;
 }
 
-.column:nth-child(2) .tile-tiny:nth-child(2) .img-des {
+.activity__column:nth-child(2) .activity__tile-tiny:nth-child(2) .img-des {
     width: 100%;
+    /* 52px is size of description */
     height: calc(100% - 52px);
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 /* 4th column */
-.column:nth-child(4) {
-    height: 400px;
+.activity__column:nth-child(4) {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 10%;
 }
 
-/* 1st photo of 4nd column */
-.column:nth-child(4) .tile-tiny:nth-child(1) {
+/* 
+    1st and 2nd photo of 4nd column
+    = has same heights */
+.activity__column:nth-child(4) .activity__tile-tiny:nth-child(1)
+, .activity__tile-tiny:nth-child(2) {
     height: 45%;
 }
 
-.column:nth-child(4) .tile-tiny:nth-child(1) a {
+.activity__column:nth-child(4) .activity__tile-tiny:nth-child(1) a 
+, .activity__tile-tiny:nth-child(2) a {
     height: 100%;
 }
 
-.column:nth-child(4) .tile-tiny:nth-child(1) .img-des {
+.activity__column:nth-child(4) .activity__tile-tiny:nth-child(1) .img-des 
+, .activity__tile-tiny:nth-child(2) .img-des {
     width: 100%;
     height: calc(100% - 52px);
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-}
-
-/* 2st photo of 4nd column */
-.column:nth-child(4) .tile-tiny:nth-child(2) {
-    height: 45%;
-}
-
-.column:nth-child(4) .tile-tiny:nth-child(2) a {
-    height: 100%;
-}
-
-.column:nth-child(4) .tile-tiny:nth-child(2) .img-des {
-    width: 100%;
-    height: calc(100% - 52px);
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
 }

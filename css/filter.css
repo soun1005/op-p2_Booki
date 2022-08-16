@@ -1,66 +1,69 @@
-.filter-wrap {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.filter-wrap h2 {
-  margin: 0 13px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.filter-icons {
-    width: 100%;
-    display: flex;   
-    flex-wrap: wrap;
-    padding: 0;
-    margin-left: 20px;
-}
-
-.filter-icons i {
+.filter__wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.filter__wrap h3 {
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* filter tags */
+.filter {
   position: relative;
-  right: 2px;
-  color: var(--accent-color);
-  background-color: var(--sub-color);
-  border-radius: 100%;
-}
-
-.filter-icons .filter {
-  display: flex;
-  align-items: center;
-}
-
-.filter-icons a {
-  background-color: #ffffff;
-  border: 2.5px #F2F2F2 solid;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: 0.3s;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  border: 1px var(--background-color) solid;
+  padding: 10px 20px;
+  border: 2.5px var(--background-color) solid;
   border-radius: 20px;
+  transition: 0.3s;
+  margin-right: 15px;
+  margin-top: 7px;
 }
 
-.filter-icons a:hover {
+/* Filter hover effect */
+.filter:hover {
   background-color: var(--sub-color);
+  border: 2.5px var(--sub-color) solid;
   transition: 0.4s;
 }
 
-.info-logo {
+.filter__icons {
+  width: 100%;
+  display: flex;   
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* icons inside filter */
+.filter__icons i {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 18px;
+  color: var(--accent-color);
+  background-color: var(--sub-color);
+  border-radius: 100%;
+  left: -3px;
+} 
+
+.filter__icons .filter {
+  display: flex;
+  align-items: center;
+}
+
+/* information */
+.info__logo {
     display: flex;
     align-items: center;
 }
 
-.info-logo i {
+.info__logo i {
     display: flex;  
     align-items: center;
     justify-content: center;

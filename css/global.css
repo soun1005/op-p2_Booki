@@ -11,8 +11,8 @@
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1400px;
+    margin: 0 auto;
     padding: 0 2%;
 }
 
@@ -42,4 +42,13 @@ h3 {
 h4 {
     font-size: 14px;
     font-weight: 200;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
 }
